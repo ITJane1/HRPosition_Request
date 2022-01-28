@@ -1,0 +1,304 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "originator": "73cf7b88-cbf0-4960-a314-84186693087e",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "Image",
+            "size": "Medium",
+            "horizontalAlignment": "Center",
+            "url": "https://i0.wp.com/whatsyourdrive-podcast.com/wp-content/uploads/2020/02/hirschbach-logo-primary-drop-color.png?ssl=1",
+            "spacing": "None"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Position Request",
+                    "wrap": true,
+                    "fontType": "Monospace",
+                    "size": "ExtraLarge",
+                    "weight": "Bolder",
+                    "separator": true,
+                    "spacing": "Small",
+                    "horizontalAlignment": "Center",
+                    "color": "Attention"
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Requester:",
+                            "wrap": true,
+                            "size": "Large",
+                            "weight": "Bolder",
+                            "color": "Accent"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "wrap": true,
+                            "text": "Manager:",
+                            "size": "Large",
+                            "separator": true,
+                            "spacing": "None",
+                            "weight": "Bolder",
+                            "color": "Accent"
+                        }
+                    ]
+                }
+            ],
+            "separator": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "@{outputs('Get_item')?['body/Author/DisplayName']}",
+                            "wrap": true,
+                            "size": "Medium"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "@{outputs('Get_item')?['body/Reporting_Manager/DisplayName']}",
+                            "wrap": true,
+                            "size": "Medium"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "wrap": true,
+                            "text": "Title:",
+                            "size": "Large",
+                            "weight": "Bolder",
+                            "color": "Accent"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "wrap": true,
+                            "text": "Schedule:",
+                            "size": "Large",
+                            "weight": "Bolder",
+                            "color": "Accent"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "Small"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "@{outputs('Get_item')?['body/Position_Title']}",
+                            "wrap": true,
+                            "size": "Medium"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "@{outputs('Get_item')?['body/Schedule_Start_Hour/Value']}-@{outputs('Get_item')?['body/Schedule_End_Hour/Value']}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Company:",
+                            "wrap": true,
+                            "size": "Large",
+                            "weight": "Bolder",
+                            "color": "Accent"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "wrap": true,
+                            "text": "Existing:",
+                            "size": "Large",
+                            "weight": "Bolder",
+                            "color": "Accent"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "Small"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "@{outputs('Get_item')?['body/Company/Value']}",
+                            "wrap": true,
+                            "size": "Medium"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "No",
+                            "wrap": true,
+                            "size": "Medium"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Department:",
+                            "wrap": true,
+                            "size": "Large",
+                            "weight": "Bolder",
+                            "color": "Accent"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "OPS Department (If Applicable): ",
+                            "wrap": true,
+                            "size": "Large",
+                            "weight": "Bolder",
+                            "color": "Accent"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "Small"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "@{outputs('Get_item')?['body/Department/Value']}",
+                            "wrap": true,
+                            "size": "Medium"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "@{outputs('Get_item')?['body/Client_Account_Name']}",
+                            "wrap": true,
+                            "size": "Medium"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "The salary $@{triggerBody()?['salary']} has been submitted at @{formatDateTime(utcnow(),'Central Standard Time','MM-dd-yyyy hh:mm tt')} and will be reviewed and approved by the president. If you believe there has been a mistake, please contact the process improvement team. Thank you.",
+                    "wrap": true,
+                    "size": "Medium",
+                    "color": "Good",
+                    "weight": "Bolder"
+                }
+            ],
+            "style": "emphasis"
+        }
+    ]
+}
