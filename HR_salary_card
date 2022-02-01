@@ -310,15 +310,22 @@
           "items": [
             {
               "type": "Input.Number",
-              "id": "salary",
-              "placeholder": "$",
+              "id": "salary_min",
+              "placeholder": "$ Min",
               "spacing": "None"
             }
           ]
         },
         {
           "type": "Column",
-          "width": "stretch"
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Input.Number",
+              "placeholder": "$ Max",
+              "id": "salary_max"
+            }
+          ]
         },
         {
           "type": "Column",
@@ -350,7 +357,7 @@
               "value": "application/json"
             }
           ],
-          "body": "{\n    \"salary\": \n    \"{{salary.value}}\",\n    \"Request_ID\":\n    \"@{outputs('Get_item')?['body/ID']}\",\n    \"receiver\":\n    \"dan\",\n    \"decision\":\n    \"{{approval.value}}\",\n    \"reason\":\n    \"{{reason.value}}\"\n}"
+          "body": "{\n    \"salary_min\": \n    \"{{salary_min.value}}\",\n    \"salary_max\": \n    \"{{salary_max.value}}\",\n    \"Request_ID\":\n    \"@{outputs('Get_item')?['body/ID']}\",\n    \"receiver\":\n    \"amanda\",\n    \"decision\":\n    \"{{approval.value}}\",\n    \"reason\":\n    \"{{reason.value}}\"\n}"
         }
       ]
     }
