@@ -6,28 +6,10 @@
   "body": [
     {
       "type": "Image",
-      "size": "Medium",
+      "size": "Small",
       "horizontalAlignment": "Center",
-      "url": "https://i0.wp.com/whatsyourdrive-podcast.com/wp-content/uploads/2020/02/hirschbach-logo-primary-drop-color.png?ssl=1",
-      "spacing": "None"
-    },
-    {
-      "type": "Container",
-      "items": [
-        {
-          "type": "TextBlock",
-          "text": "Position Request",
-          "wrap": true,
-          "fontType": "Monospace",
-          "size": "ExtraLarge",
-          "weight": "Bolder",
-          "separator": true,
-          "spacing": "Small",
-          "horizontalAlignment": "Center",
-          "color": "Attention"
-        }
-      ],
-      "spacing": "None"
+      "spacing": "None",
+      "url": "https://i.imgur.com/ovfNm7B.png"
     },
     {
       "type": "ColumnSet",
@@ -40,7 +22,7 @@
               "type": "TextBlock",
               "text": "Requester:",
               "wrap": true,
-              "size": "Large",
+              "size": "Medium",
               "weight": "Bolder",
               "color": "Accent"
             }
@@ -54,7 +36,7 @@
               "type": "TextBlock",
               "wrap": true,
               "text": "Manager:",
-              "size": "Large",
+              "size": "Medium",
               "separator": true,
               "spacing": "None",
               "weight": "Bolder",
@@ -62,8 +44,7 @@
             }
           ]
         }
-      ],
-      "separator": true
+      ]
     },
     {
       "type": "ColumnSet",
@@ -104,75 +85,12 @@
           "items": [
             {
               "type": "TextBlock",
-              "wrap": true,
-              "text": "Title:",
-              "size": "Large",
-              "weight": "Bolder",
-              "color": "Accent"
-            }
-          ]
-        },
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
-              "wrap": true,
-              "text": "Schedule:",
-              "size": "Large",
-              "weight": "Bolder",
-              "color": "Accent"
-            }
-          ]
-        }
-      ],
-      "spacing": "Small"
-    },
-    {
-      "type": "ColumnSet",
-      "columns": [
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
-              "text": "@{outputs('Get_item_2')?['body/Position_Title']}",
-              "wrap": true,
-              "size": "Medium"
-            }
-          ]
-        },
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
-              "text": "@{outputs('Get_item_2')?['body/Schedule_Start_Hour/Value']}-@{outputs('Get_item_2')?['body/Schedule_End_Hour/Value']}",
-              "wrap": true,
-              "size": "Medium"
-            }
-          ]
-        }
-      ],
-      "spacing": "None"
-    },
-    {
-      "type": "ColumnSet",
-      "columns": [
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
               "text": "Company:",
               "wrap": true,
-              "size": "Large",
+              "size": "Medium",
               "weight": "Bolder",
-              "color": "Accent"
+              "color": "Accent",
+              "spacing": "None"
             }
           ]
         },
@@ -182,16 +100,16 @@
           "items": [
             {
               "type": "TextBlock",
+              "text": "Department:",
               "wrap": true,
-              "text": "Existing:",
-              "size": "Large",
+              "size": "Medium",
               "weight": "Bolder",
-              "color": "Accent"
+              "color": "Accent",
+              "spacing": "None"
             }
           ]
         }
-      ],
-      "spacing": "Small"
+      ]
     },
     {
       "type": "ColumnSet",
@@ -214,73 +132,10 @@
           "items": [
             {
               "type": "TextBlock",
-              "text": "No",
-              "wrap": true,
-              "size": "Medium"
-            }
-          ]
-        }
-      ],
-      "spacing": "None"
-    },
-    {
-      "type": "ColumnSet",
-      "columns": [
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
-              "text": "Department:",
-              "wrap": true,
-              "size": "Large",
-              "weight": "Bolder",
-              "color": "Accent"
-            }
-          ]
-        },
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
-              "text": "OPS Department (If Applicable): ",
-              "wrap": true,
-              "size": "Large",
-              "weight": "Bolder",
-              "color": "Accent"
-            }
-          ]
-        }
-      ],
-      "spacing": "Small"
-    },
-    {
-      "type": "ColumnSet",
-      "columns": [
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
               "text": "@{outputs('Get_item_2')?['body/Department/Value']}",
               "wrap": true,
-              "size": "Medium"
-            }
-          ]
-        },
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
-              "text": "@{outputs('Get_item_2')?['body/Client_Account_Name']}",
-              "wrap": true,
-              "size": "Medium"
+              "size": "Medium",
+              "spacing": "None"
             }
           ]
         }
@@ -297,8 +152,8 @@
             {
               "type": "TextBlock",
               "wrap": true,
-              "text": "Salary Recommendation:",
-              "size": "Large",
+              "text": "Title:",
+              "size": "Medium",
               "weight": "Bolder",
               "color": "Accent",
               "spacing": "None"
@@ -311,16 +166,256 @@
           "items": [
             {
               "type": "TextBlock",
-              "text": "Time:",
               "wrap": true,
+              "text": "Existing:",
+              "size": "Medium",
+              "weight": "Bolder",
               "color": "Accent",
-              "size": "Large",
-              "weight": "Bolder"
+              "spacing": "None"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "@{outputs('Get_item_2')?['body/Position_Title']}",
+              "wrap": true,
+              "size": "Medium",
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "@{if(equals(outputs('Get_item_2')?['body/Existing'],true),'Yes','No')}",
+              "wrap": true,
+              "size": "Medium"
             }
           ]
         }
       ],
-      "spacing": "Small"
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Location:",
+              "wrap": true,
+              "size": "Medium",
+              "color": "Accent",
+              "weight": "Bolder",
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Ops Client Account Name (If Applicable)",
+              "wrap": true,
+              "size": "Medium",
+              "weight": "Bolder",
+              "color": "Accent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "@{outputs('Get_item_2')?['body/Location/Value']}",
+              "wrap": true,
+              "spacing": "None",
+              "size": "Medium"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "@{outputs('Get_item_2')?['body/Client_Account_Name']}",
+              "wrap": true,
+              "size": "Medium",
+              "spacing": "None"
+            }
+          ]
+        }
+      ],
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Schedule Details:",
+              "wrap": true,
+              "size": "Medium",
+              "weight": "Bolder",
+              "color": "Accent",
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch"
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "@{outputs('Get_item_2')?['body/Schedule']}",
+              "wrap": true,
+              "size": "Medium",
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch"
+        }
+      ],
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Supervisor",
+              "wrap": true,
+              "size": "Medium",
+              "color": "Accent",
+              "weight": "Bolder"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Supervising",
+              "wrap": true,
+              "size": "Medium",
+              "color": "Accent",
+              "weight": "Bolder"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "@{if(equals(outputs('Get_item_2')?['body/Supervisor'],true),'Yes','No')}",
+              "wrap": true,
+              "size": "Medium"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "wrap": true,
+              "size": "Medium",
+              "text": "@{outputs('Get_item_2')?['body/Supervising']}"
+            }
+          ]
+        }
+      ],
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Part-Time",
+              "wrap": true,
+              "weight": "Bolder",
+              "size": "Medium",
+              "color": "Accent"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Number of Open Positions",
+              "wrap": true,
+              "size": "Medium",
+              "weight": "Bolder",
+              "color": "Accent"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "ColumnSet",
@@ -333,7 +428,7 @@
               "type": "TextBlock",
               "wrap": true,
               "size": "Medium",
-              "text": "@{outputs('Get_item_2')?['body/Salary_Target']}"
+              "text": "@{if(equals(outputs('Get_item_2')?['body/Part_Time'],true),'Yes','No')}"
             }
           ]
         },
@@ -343,7 +438,7 @@
           "items": [
             {
               "type": "TextBlock",
-              "text": "@{body('Convert_time_zone')}",
+              "text": "@{outputs('Get_item_2')?['body/Number']}",
               "wrap": true,
               "size": "Medium"
             }
@@ -353,19 +448,54 @@
       "spacing": "None"
     },
     {
-      "type": "Container",
-      "separator": true,
-      "spacing": "Medium",
-      "items": [
+      "type": "ColumnSet",
+      "columns": [
         {
-          "type": "TextBlock",
-          "wrap": true,
-          "text": "You have @{triggerBody()?['decision']} the request at @{body('Convert_time_zone')}, and the Human Resources department will further process this request. If you believe there has been a mistake, please contact the Process Improvement Team. Thank you.",
-          "size": "Large",
-          "weight": "Bolder",
-          "color": "Good"
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Salary Recommendation",
+              "wrap": true,
+              "size": "Medium",
+              "weight": "Bolder",
+              "color": "Accent"
+            },
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "@{outputs('Compose_2')}",
+                      "wrap": true,
+                      "size": "Medium",
+                      "spacing": "None"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch"
+                }
+              ],
+              "spacing": "None"
+            }
+          ]
         }
       ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "You have @{triggerBody()?['decision']} the request for @{triggerBody()?['number']} open position(s) at @{body('Convert_time_zone')}, and the Human Resources department will further process this request. If you believe there has been a mistake, please contact the Process Improvement Team. Thank you.",
+      "wrap": true,
+      "size": "Medium",
+      "color": "Good",
+      "weight": "Bolder"
     }
   ]
 }
