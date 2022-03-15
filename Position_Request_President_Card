@@ -6,28 +6,10 @@
   "body": [
     {
       "type": "Image",
-      "size": "Medium",
+      "size": "Small",
       "horizontalAlignment": "Center",
-      "url": "https://i0.wp.com/whatsyourdrive-podcast.com/wp-content/uploads/2020/02/hirschbach-logo-primary-drop-color.png?ssl=1",
-      "spacing": "None"
-    },
-    {
-      "type": "Container",
-      "items": [
-        {
-          "type": "TextBlock",
-          "text": "Position Request",
-          "wrap": true,
-          "fontType": "Monospace",
-          "size": "ExtraLarge",
-          "weight": "Bolder",
-          "separator": true,
-          "spacing": "Small",
-          "horizontalAlignment": "Center",
-          "color": "Attention"
-        }
-      ],
-      "spacing": "None"
+      "spacing": "None",
+      "url": "https://i.imgur.com/ovfNm7B.png"
     },
     {
       "type": "ColumnSet",
@@ -40,7 +22,7 @@
               "type": "TextBlock",
               "text": "Requester:",
               "wrap": true,
-              "size": "Large",
+              "size": "Medium",
               "weight": "Bolder",
               "color": "Accent"
             }
@@ -54,7 +36,7 @@
               "type": "TextBlock",
               "wrap": true,
               "text": "Manager:",
-              "size": "Large",
+              "size": "Medium",
               "separator": true,
               "spacing": "None",
               "weight": "Bolder",
@@ -62,8 +44,7 @@
             }
           ]
         }
-      ],
-      "separator": true
+      ]
     },
     {
       "type": "ColumnSet",
@@ -104,74 +85,12 @@
           "items": [
             {
               "type": "TextBlock",
-              "wrap": true,
-              "text": "Title:",
-              "size": "Large",
-              "weight": "Bolder",
-              "color": "Accent"
-            }
-          ]
-        },
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
-              "wrap": true,
-              "text": "Schedule:",
-              "size": "Large",
-              "weight": "Bolder",
-              "color": "Accent"
-            }
-          ]
-        }
-      ],
-      "spacing": "Small"
-    },
-    {
-      "type": "ColumnSet",
-      "columns": [
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
-              "text": "@{outputs('Get_item')?['body/Position_Title']}",
-              "wrap": true,
-              "size": "Medium"
-            }
-          ]
-        },
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
-              "text": "@{outputs('Get_item')?['body/Schedule_Start_Hour/Value']}-@{outputs('Get_item')?['body/Schedule_End_Hour/Value']}",
-              "wrap": true
-            }
-          ]
-        }
-      ],
-      "spacing": "None"
-    },
-    {
-      "type": "ColumnSet",
-      "columns": [
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
               "text": "Company:",
               "wrap": true,
-              "size": "Large",
+              "size": "Medium",
               "weight": "Bolder",
-              "color": "Accent"
+              "color": "Accent",
+              "spacing": "None"
             }
           ]
         },
@@ -181,16 +100,16 @@
           "items": [
             {
               "type": "TextBlock",
+              "text": "Department:",
               "wrap": true,
-              "text": "Existing:",
-              "size": "Large",
+              "size": "Medium",
               "weight": "Bolder",
-              "color": "Accent"
+              "color": "Accent",
+              "spacing": "None"
             }
           ]
         }
-      ],
-      "spacing": "Small"
+      ]
     },
     {
       "type": "ColumnSet",
@@ -213,73 +132,10 @@
           "items": [
             {
               "type": "TextBlock",
-              "text": "No",
-              "wrap": true,
-              "size": "Medium"
-            }
-          ]
-        }
-      ],
-      "spacing": "None"
-    },
-    {
-      "type": "ColumnSet",
-      "columns": [
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
-              "text": "Department:",
-              "wrap": true,
-              "size": "Large",
-              "weight": "Bolder",
-              "color": "Accent"
-            }
-          ]
-        },
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
-              "text": "OPS Department (If Applicable): ",
-              "wrap": true,
-              "size": "Large",
-              "weight": "Bolder",
-              "color": "Accent"
-            }
-          ]
-        }
-      ],
-      "spacing": "Small"
-    },
-    {
-      "type": "ColumnSet",
-      "columns": [
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
               "text": "@{outputs('Get_item')?['body/Department/Value']}",
               "wrap": true,
-              "size": "Medium"
-            }
-          ]
-        },
-        {
-          "type": "Column",
-          "width": "stretch",
-          "items": [
-            {
-              "type": "TextBlock",
-              "text": "@{outputs('Get_item')?['body/Client_Account_Name']}",
-              "wrap": true,
-              "size": "Medium"
+              "size": "Medium",
+              "spacing": "None"
             }
           ]
         }
@@ -296,8 +152,8 @@
             {
               "type": "TextBlock",
               "wrap": true,
-              "text": "Salary Recommendation:",
-              "size": "Large",
+              "text": "Title:",
+              "size": "Medium",
               "weight": "Bolder",
               "color": "Accent",
               "spacing": "None"
@@ -310,16 +166,16 @@
           "items": [
             {
               "type": "TextBlock",
-              "text": "Time:",
               "wrap": true,
+              "text": "Existing:",
+              "size": "Medium",
+              "weight": "Bolder",
               "color": "Accent",
-              "size": "Large",
-              "weight": "Bolder"
+              "spacing": "None"
             }
           ]
         }
-      ],
-      "spacing": "Small"
+      ]
     },
     {
       "type": "ColumnSet",
@@ -330,7 +186,327 @@
           "items": [
             {
               "type": "TextBlock",
-              "text": "$@{triggerBody()?['salary']}",
+              "text": "@{outputs('Get_item')?['body/Position_Title']}",
+              "wrap": true,
+              "size": "Medium",
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "@{if(equals(outputs('Get_Item')?['body/Existing'],true),'Yes','No')}",
+              "wrap": true,
+              "size": "Medium"
+            }
+          ]
+        }
+      ],
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Location:",
+              "wrap": true,
+              "size": "Medium",
+              "color": "Accent",
+              "weight": "Bolder",
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Ops Client Account Name (If Applicable)",
+              "wrap": true,
+              "size": "Medium",
+              "weight": "Bolder",
+              "color": "Accent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "@{outputs('Get_Item')?['body/Location/Value']}",
+              "wrap": true,
+              "spacing": "None",
+              "size": "Medium"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "@{outputs('Get_item')?['body/Client_Account_Name']}",
+              "wrap": true,
+              "size": "Medium",
+              "spacing": "None"
+            }
+          ]
+        }
+      ],
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Schedule Details:",
+              "wrap": true,
+              "size": "Medium",
+              "weight": "Bolder",
+              "color": "Accent",
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch"
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "@{outputs('Get_Item')?['body/Schedule']}",
+              "wrap": true,
+              "size": "Medium",
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch"
+        }
+      ],
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Supervisor",
+              "wrap": true,
+              "size": "Medium",
+              "color": "Accent",
+              "weight": "Bolder"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Supervising",
+              "wrap": true,
+              "size": "Medium",
+              "color": "Accent",
+              "weight": "Bolder"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "@{if(equals(outputs('Get_Item')?['body/Supervisor'],true),'Yes','No')}",
+              "wrap": true,
+              "size": "Medium"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "wrap": true,
+              "size": "Medium",
+              "text": "@{outputs('Get_item')?['body/Supervising']}"
+            }
+          ]
+        }
+      ],
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Part-Time",
+              "wrap": true,
+              "weight": "Bolder",
+              "size": "Medium",
+              "color": "Accent"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Number of Open Positions",
+              "wrap": true,
+              "size": "Medium",
+              "weight": "Bolder",
+              "color": "Accent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "wrap": true,
+              "size": "Medium",
+              "text": "@{if(equals(outputs('Get_Item')?['body/Part_Time'],true),'Yes','No')}"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "@{outputs('Get_Item')?['body/Number']}",
+              "wrap": true,
+              "size": "Medium"
+            }
+          ]
+        }
+      ],
+      "spacing": "None"
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "size": "Medium",
+      "weight": "Bolder",
+      "color": "Accent",
+      "text": "Amanda's Comment"
+    },
+    {
+      "type": "TextBlock",
+      "text": "@{triggerBody()?['comment']}",
+      "wrap": true,
+      "color": "Warning",
+      "weight": "Default",
+      "size": "Default",
+      "spacing": "None"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Salary Recommendation",
+              "wrap": true,
+              "weight": "Bolder",
+              "size": "Medium",
+              "color": "Accent"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "wrap": true,
+              "text": "Salary Timestamp",
+              "size": "Medium",
+              "weight": "Bolder",
+              "color": "Accent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "$@{triggerBody()?['salary_min']} - $@{triggerBody()?['salary_max']}",
               "wrap": true,
               "size": "Medium"
             }
@@ -360,11 +536,11 @@
           "items": [
             {
               "type": "TextBlock",
+              "text": "Decision",
               "wrap": true,
-              "size": "Large",
+              "size": "Medium",
               "weight": "Bolder",
-              "color": "Accent",
-              "text": "Approval:"
+              "color": "Accent"
             }
           ]
         },
@@ -374,17 +550,30 @@
           "items": [
             {
               "type": "TextBlock",
-              "text": "Comment:",
               "wrap": true,
-              "size": "Large",
+              "text": "Approved Number",
+              "size": "Medium",
+              "weight": "Bolder",
+              "color": "Accent"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Comment",
+              "wrap": true,
+              "size": "Medium",
               "weight": "Bolder",
               "color": "Accent"
             }
           ]
         }
       ],
-      "separator": true,
-      "spacing": "Medium"
+      "separator": true
     },
     {
       "type": "ColumnSet",
@@ -397,15 +586,30 @@
               "type": "Input.ChoiceSet",
               "choices": [
                 {
-                  "title": "Approve",
+                  "title": "Approved",
                   "value": "Approved"
                 },
                 {
-                  "title": "Reject",
+                  "title": "Rejected",
                   "value": "Rejected"
                 }
               ],
-              "id": "decision"
+              "placeholder": "Please pick a decision",
+              "id": "approval"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Input.Number",
+              "placeholder": "Placeholder text",
+              "min": 1,
+              "id": "number",
+              "value": "@{outputs('Get_item')?['body/Number']}",
+              "max": "@{outputs('Get_item')?['body/Number']}"
             }
           ]
         },
@@ -416,21 +620,23 @@
             {
               "type": "Input.Text",
               "isMultiline": true,
+              "placeholder": "Add a comment",
               "id": "reason"
             }
           ]
         }
       ],
-      "spacing": "Small"
+      "spacing": "None"
     },
     {
       "type": "ActionSet",
+      "spacing": "None",
       "actions": [
         {
           "type": "Action.Http",
           "title": "Submit",
-          "method": "POST",
           "url": "https://prod-185.westus.logic.azure.com:443/workflows/a45e2eb6be46454cbc594f13b9a47ad3/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=xhllKjbF-NW59Z6H7JWCwfzp-1UNtAR3nQeiDOyYOVw",
+          "method": "POST",
           "id": "submit",
           "headers": [
             {
@@ -442,7 +648,7 @@
               "value": "application/json"
             }
           ],
-          "body": "{\n    \"salary\": \n    \"{{salary.value}}\",\n    \"Request_ID\":\n    \"@{outputs('Get_item')?['body/ID']}\",\n    \"receiver\":\n    \"dan\",\n    \"decision\":\n    \"{{decision.value}}\",\n    \"reason\":\n    \"{{reason.value}}\"\n}"
+          "body": "{\n  \"salary_min\": \n  \"{{salary_min.value}}\",\n  \"salary_max\": \n  \"{{salary_max.value}}\",\n  \"location\": \n  \"{{location.value}}\",\n  \"Existing\": \n  \"{{existing.value}}\",\n  \"schedule\": \n  \"{{schedule.value}}\",\n  \"Request_ID\":\n  \"@{outputs('Get_item')?['body/ID']}\",\n  \"receiver\":\n  \"dan\",\n  \"decision\":\n  \"{{approval.value}}\",\n  \"reason\":\n  \"{{reason.value}}\",\n  \"comment\":\n  \"{{comment.value}}\",\n  \"number\":\n  \"{{number.value}}\"\n}"
         }
       ]
     }
